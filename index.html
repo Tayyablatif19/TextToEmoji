@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="main">
+
+        <h1>Text <span><img src="./1-2-arrow-png-image.png" alt=""></span>Emoji</h1>
+
+        <div id="endec-div">
+            <h3 id="enc-btn"><span><img src="./icons8-lock-30.png" alt=""></span>Encrypt</h3>
+            <h3 id="dec-btn"><span><img src="./icons8-open-lock-24.png" alt=""></span>Decrypt</h3>
+        </div>
+
+        <div id="encryption">
+
+            <h5>1. Type your message. </h5>
+            <textarea placeholder="Input your text here" id="txtmsg" cols="30" rows="5"></textarea>
+
+            <h5>2. Set up a Password</h5>
+            <input type="password" name="" id="password">
+
+            <button id="encrypt-btn"><span><img src="./icons8-lock-30.png" alt=""></span>Encrypt</button>
+
+        </div>
+
+        <div id="decryption">
+
+            <h5>1. Enter your encrypted Emojis. </h5>
+            <textarea placeholder="Input your Emojis here" id="emojimsg" cols="30" rows="5"></textarea>
+
+            <h5>2. Type the Password</h5>
+            <input type="password" name="" id="finalpassword">
+
+            <button id="decrypt-btn"><span><img src="./icons8-open-lock-24.png" alt=""></span>Decrypt</button>
+
+        </div>
+
+        <div id="result"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

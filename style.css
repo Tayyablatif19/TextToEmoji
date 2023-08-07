@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: */
+    color: #fff;
+
+}
+html,
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+#main>h1 {
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main>h1 span{
+
+    margin: 0px 20px;
+    display: flex;
+    align-items: center;
+    
+
+}
+
+#main>h1 span img{
+    rotate: 180deg;
+    height: 20px;
+    transition: 0.5s ease;
+   
+    
+}
+
+#endec-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #222;
+    padding: 4px;
+    margin: 10px 0px;
+    border-radius: 4px;
+    /* width: 60%; */
+}
+
+#endec-div h3{
+    font-size: 15px;
+    font-weight: 400;
+    display: flex;
+    border-radius: 4px;
+    align-items: center;
+    cursor: pointer;
+    /* padding: 12px 10px; */
+    border-radius: 2px;
+    justify-content: center;
+}
+
+#enc-btn{
+    background-color: #333;
+    width: 100px;
+    
+}
+
+
+#dec-btn{
+    background-color: #222;
+    width: 100px;
+}
+
+#enc-btn:hover{
+    background-color: #333;
+}
+
+#dec-btn:hover{
+    background-color: #333;
+}
+
+
+
+#endec-div h3 span{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    transform: 0.8s ease;
+    
+}
+
+#endec-div h3 span img{
+    height: 20px;
+    
+}
+
+#encryption{
+    display: flex;
+    width: 100%;
+    /* background-color: red; */
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+    
+    
+
+}
+
+#encryption h5{
+    font-size: 17px;
+    font-weight: 300;
+    color: #6e6e6e;
+    margin-bottom: 20px;
+}
+
+#encryption textarea {
+    width: 100%;
+    height: 60px;
+    /* border: 1px solid #343434; */
+    padding: 10px ;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    font-size: 17px ;
+    outline: none;
+    background-color: #1c1c1c;
+    border: 1px solid #6e6e6e;
+}
+
+#encryption input {
+    width: 100%;
+    /* height: 60px; */
+    /* border: 1px solid #343434; */
+    padding: 10px ;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    font-size: 17px ;
+    outline: none;
+    background-color: #1c1c1c;
+    border: 1px solid #6e6e6e;
+}
+
+#encryption button{
+    display: flex;
+    align-items: center;
+    color: #6e6e6e;
+    background-color: #1c1c1c;
+    border: none;
+    justify-content: center;
+    width: 100%;
+    padding: 6px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid #6e6e6e;
+}
+
+button span{
+    display: flex;
+    margin-right: 10px;
+}
+
+button img{
+    height: 25px;
+}
+
+
+#decryption{
+    display: flex;
+    width: 100%;
+    /* background-color: red; */
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+    display: none;
+    
+
+}
+
+#decryption h5{
+    font-size: 17px;
+    font-weight: 300;
+    color: #6e6e6e;
+    margin-bottom: 20px;
+}
+
+#decryption textarea {
+    width: 100%;
+    height: 60px;
+    /* border: 1px solid #343434; */
+    padding: 10px ;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    font-size: 17px ;
+    outline: none;
+    background-color: #1c1c1c;
+    border: 1px solid #6e6e6e;
+}
+
+#decryption input {
+    width: 100%;
+    /* height: 60px; */
+    /* border: 1px solid #343434; */
+    padding: 10px ;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    font-size: 17px ;
+    outline: none;
+    background-color: #1c1c1c;
+    border: 1px solid #6e6e6e;
+}
+
+#decryption button{
+    display: flex;
+    align-items: center;
+    color: #6e6e6e;
+    background-color: #1c1c1c;
+    border: none;
+    justify-content: center;
+    width: 100%;
+    padding: 6px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid #6e6e6e;
+}
+
+button span{
+    display: flex;
+    margin-right: 10px;
+    /* background-color: #6e6e6e; */
+}
+
+button img{
+    height: 25px;
+}
+
+#result{
+    margin-top: 10px;
+    border: 1px solid #6e6e6e;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    #main > h1 {
+        font-size: 28px;
+    }
+
+    #main > h1 span img {
+        height: 15px;
+    }
+
+    #endec-div h3 {
+        font-size: 12px;
+        padding: 8px 6px;
+    }
+
+    #encryption textarea,
+    #decryption textarea,
+    #encryption input,
+    #decryption input {
+        height: 40px;
+    }
+}
